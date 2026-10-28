@@ -11,14 +11,4 @@ if ($moyenne >= 10) {
 } else {
     echo "La moyenne est de $moyenne, vous avez ajourné.<br>";
 }
-
-switch ($moyenne) {
-    case ($moyenne >= 10):
-        echo "La moyenne est de $moyenne, vous avez admis.<br>";
-        break;
-    case ($moyenne >= 9):
-        echo "La moyenne est de $moyenne, vous avez le rattrapage.<br>";
-        break;
-    default:
-        echo "La moyenne est de $moyenne, vous avez ajourné.<br>";
-}
+?>
