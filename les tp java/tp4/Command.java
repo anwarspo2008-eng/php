@@ -17,25 +17,30 @@ public class Command {
     public boolean addArt(Article art) {
         return this.ListArt.add(art); 
     }
-    public Article delArt(String code){
-        for (int i = 0 ; i<ListArt.size() ; i++){
-            if (ListArt.get(i).getcode().equals(code)){
+    public Article delArt(String code) {
+        for (int i = 0; i < ListArt.size(); i++) {
+            if (ListArt.get(i).getCode().equals(code)) {
                 return ListArt.remove(i);
             }
         }
+        return null; 
     }
-    public Article delArt(int index){
-        return this.ListArt.remove(index);
-    }
-    public Article updateArt(int index , String newval){
-        return Article.set(index , newval);
-    }
-    @Overide
-    public toString(){
 
-         return super.toString() 
-
+    public Article delArt(int index) {
+        if (index >= 0 && index < ListArt.size()) {
+            return this.ListArt.remove(index);
+        }
+        return null;
     }
-        
 
+    public Article updateArt(int index, Article newArticle) {
+        if (index >= 0 && index < ListArt.size()) {
+            return this.ListArt.set(index, newArticle); 
+        }
+        return null;
+    }
+
+    @Override
+    public String toString() {
+    }
 }
