@@ -14,11 +14,13 @@ public class main {
         scanner.close();
     }
 }
+
 class ageInvalideException extends Exception {
     public ageInvalideException(String message) {
         super(message);
     }
 }
+
 class personne {
     private int age;
     public void setAge(int age) throws ageInvalideException {

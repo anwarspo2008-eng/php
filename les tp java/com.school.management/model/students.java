@@ -11,7 +11,7 @@ public class Student extends Person {
 
     public Student(String id, String name, String email) {
         super(id, name, email);
-        this.grades = new HashMap<>(); // 1. Always initialize your collections!
+        this.grades = new HashMap<>(); 
     }
 
     public void enrollInCourse(Course course) {

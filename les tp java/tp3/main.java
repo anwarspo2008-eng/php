@@ -16,7 +16,6 @@ class soldeIsuffisantException extends Exception {
 }
 
 class comptBancaire {
-
     private     double  solde;
     private     String  titulaire;
 
